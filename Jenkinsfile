@@ -15,7 +15,7 @@ pipeline {
         stage('Run Helmfile') {
             steps {
                 script {
-                    sh 'helmfile apply'
+                    sh 'sudo -u sigmoid helmfile apply'
                 }
             }
         }
