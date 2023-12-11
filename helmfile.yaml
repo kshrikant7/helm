@@ -1,0 +1,9 @@
+releases:
+  - name: microservice1
+    chart: microservice1
+    installed: true
+
+
+  - name: microservice2
+    chart: microservice2
+    installed: true
