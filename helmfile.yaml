@@ -1,9 +1,11 @@
 releases:
   - name: microservice1
-    chart: microservice1
-    installed: true
-
+    chart: ./microservice1
+    install: true
 
   - name: microservice2
-    chart: microservice2
-    installed: true
+    chart: ./microservice2
+    install: true
+
+helmDefaults:
+  helmDiffCommand: ""
