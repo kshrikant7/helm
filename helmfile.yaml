@@ -6,6 +6,3 @@ releases:
   - name: microservice2
     chart: ./microservice2
     installed: true
-
-helmDefaults:
-  helmDiffCommand: ""
