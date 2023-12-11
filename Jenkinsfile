@@ -11,11 +11,10 @@ pipeline {
                 }
             }
         }
-        stage('Remove Helm') {
+        stage('Install Helm Diff Plugin') {
             steps {
                 script {
-                    sh 'helm uninstall microservice1'
-                    sh 'helm uninstall microservice2'
+                    sh 'helm plugin install https://github.com/databus23/helm-diff'
                 }
             }
         }
