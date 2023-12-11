@@ -11,6 +11,14 @@ pipeline {
                 }
             }
         }
+        stage('Remove Helm') {
+            steps {
+                script {
+                    sh 'helm uninstall microservice1'
+                    sh 'helm uninstall microservice2'
+                }
+            }
+        }
 
         stage('Run Helmfile') {
             steps {
