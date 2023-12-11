@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     sh 'helm version'
-                    sh 'helmfile --version'
+                    sh 'helmfile init'
                 }
             }
         }
