@@ -11,13 +11,6 @@ pipeline {
                 }
             }
         }
-        stage('Install Helm Diff Plugin') {
-            steps {
-                script {
-                    sh 'helm plugin install https://github.com/databus23/helm-diff'
-                }
-            }
-        }
 
         stage('Run Helmfile') {
             steps {
