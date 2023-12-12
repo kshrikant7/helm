@@ -11,13 +11,13 @@ pipeline {
                 }
             }
         }
-        stage('Install Helm Diff Plugin') {
-            steps {
-                script {
-                    sh 'sudo -u sigmoid helm plugin install https://github.com/databus23/helm-diff'
-                }
-            }
-        }
+        // stage('Install Helm Diff Plugin') {
+        //     steps {
+        //         script {
+        //             sh 'sudo -u sigmoid helm plugin install https://github.com/databus23/helm-diff'
+        //         }
+        //     }
+        // }
         stage('Run Helmfile') {
             steps {
                 script {
